@@ -303,29 +303,330 @@ h2.titre-description {
 }
 
 /* //////////////////EVENT ////////////// */
+/* =========================
+   EVENT PAGE
+========================= */
 
-p.text-event {
-  color: white;
-  background: #0d6efd;
+.event-page {
+    width: 100%;
 }
-button.btn-carte {
-  padding-top: 12px;
-  border-radius: 15px;
+
+.event-intro {
+    width: min(1000px, 92%);
+    margin: 4rem auto 2.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
-button p {
-  font-weight: 600;
-  color: black;
+
+.event-intro h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
 }
-button a {
-  text-decoration: none;
+
+.event-intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
 }
-button.btn-carte:hover {
-  background: var(--color5);
-  transition: 0.7s ease-in-out;
-  border: 2px solid var(--color4);
+
+
+/* =========================
+   FEATURED EVENT
+========================= */
+
+.featured-event {
+    width: min(1200px, 92%);
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
-h3.article-form {
-  color: #0d6efd;
+
+.featured-event-image {
+    min-height: 520px;
+}
+
+.featured-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-event-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-badge {
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding: 0.45rem 1rem;
+    border-radius: 50px;
+    background: rgba(213, 14, 162, 0.12);
+    color: var(--color2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+}
+
+.featured-event-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.featured-event-content p {
+    line-height: 1.7;
+    color: #444;
+}
+
+.event-info {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--color2);
+    background: rgba(213, 14, 162, 0.06);
+}
+
+.event-info p {
+    margin: 0.35rem 0;
+}
+
+.event-actions {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn-event-secondary {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--color2);
+    border-radius: 50px;
+    color: var(--color2);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.btn-event-secondary:hover {
+    background: var(--color2);
+    color: white;
+}
+
+
+/* =========================
+   UPCOMING EVENTS
+========================= */
+
+.upcoming-events {
+    width: min(1200px, 92%);
+    margin: 0 auto 4rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.event-small-card {
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.event-small-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.32);
+}
+
+.event-date {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--color2);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.event-small-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.event-small-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.event-location {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   EVENT FORM
+========================= */
+
+.event-form-section {
+    width: min(1000px, 92%);
+    margin: 0 auto 4rem;
+    padding: 3rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.event-form-intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.event-form-intro h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.event-form-intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+.event-form {
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.event-form .form-control,
+.event-form .form-select {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+}
+
+.event-form .form-control:focus,
+.event-form .form-select:focus {
+    border-color: var(--color2);
+    box-shadow: 0 0 0 0.2rem rgba(213, 14, 162, 0.15);
+}
+
+.form-consent {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+
+/* =========================
+   EVENT RESPONSIVE
+========================= */
+
+@media screen and (max-width: 992px) {
+
+    .featured-event {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-event-image {
+        min-height: 380px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .event-intro {
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .featured-event-content {
+        padding: 2rem;
+    }
+
+    .event-form-section {
+        padding: 2rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .featured-event,
+    .event-intro,
+    .upcoming-events,
+    .event-form-section {
+        width: 94%;
+    }
+
+    .featured-event-image {
+        min-height: 260px;
+    }
+
+    .featured-event-content,
+    .event-form-section {
+        padding: 1.4rem;
+    }
+
+    .event-actions {
+        flex-direction: column;
+    }
+
+    .event-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 /* //////////////////FOOTER ////////////// */
 
