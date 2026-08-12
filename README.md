@@ -4,6 +4,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)]()
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1.3-7952B3?logo=bootstrap&logoColor=white)]()
+[![Version](https://img.shields.io/badge/Version-v1.0.0-red)]()
 [![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
 ---
